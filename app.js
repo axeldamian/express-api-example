@@ -1,4 +1,4 @@
-import getContent from "./axios.js";
+const lib = require("./axios");
 
 const express = require('express'); // Importa Express
 const app = express(); // Crea una aplicación Express
@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Define una ruta básica
 app.get('/', (req, res) => {
-    getContent("asd");
+    lib.getContent("asd");
     res.send('¡Hola, mundo!'); // Responde con un mensaje
 });
 

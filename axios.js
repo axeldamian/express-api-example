@@ -1,10 +1,11 @@
-import axios from 'axios';
+//import axios from 'axios';
+const axios = require('axios');
 
 const http = axios.create({
   baseUrl: 'https://www.google.com'
 });
 
-export function getContent(userId: string) {
+function getContent(userId) {
   console.log(userId);
   return http.get('/search', {
   params : {
@@ -12,3 +13,5 @@ export function getContent(userId: string) {
   }
   });
 }
+
+module.exports = { getContent };
