@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Define una ruta básica
 app.get('/', (req, res) => {
-    lib.getContent("asd");
+    console.log(lib.getContent("asd"));
     res.send('¡Hola, mundo!'); // Responde con un mensaje
 });
 
