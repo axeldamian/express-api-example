@@ -14,6 +14,12 @@ Instalar Express.js (para crear un servidor, exponer endpoints con verbos y escu
 ```
 npm install express
 ```
+capaz hay que ponerle --save-dev
+
+Para correr nodemon
+```
+npm run start
+```
 
 Instalar Axios (para hacer api calls)
 ```
