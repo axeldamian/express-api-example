@@ -14,12 +14,6 @@ Instalar Express.js (para crear un servidor, exponer endpoints con verbos y escu
 ```
 npm install express
 ```
-capaz hay que ponerle ```--save-dev```
-
-Para correr nodemon
-```
-npm run start
-```
 
 Instalar Axios (para hacer api calls)
 ```
@@ -31,6 +25,12 @@ Instale nodemon, pero porque quize
 npm i nodemon
 ```
 Reinicia la aplicación sola si realizo cambios, para no hacerlo yo cada rato.
+capaz hay que ponerle ```--save-dev```
+
+Para correr nodemon
+```
+npm run start
+```
 
 Yarn es como npm un package manager, npm es node package manager (dicen que no, pero no tiene sentido otra explicación).
 No conviene instalar Yarn con npm.
