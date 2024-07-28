@@ -20,6 +20,15 @@ Instalar Axios (para hacer api calls)
 npm install axios
 ```
 
+Instale nodemon, pero porque quize
+```
+npm i nodemon
+```
+Reinicia la aplicación sola si realizo cambios, para no hacerlo yo cada rato.
+
+Yarn es como npm un package manager, npm es node package manager (dicen que no, pero no tiene sentido otra explicación).
+No conviene instalar Yarn con npm.
+
 ## Ejecutar aplicación
 
 ```
