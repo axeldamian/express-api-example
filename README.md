@@ -53,3 +53,11 @@ Con nodemon
 ```
 npm run dev
 ```
+
+## Endpoints
+
+GET
+```
+:3000/api
+```
+Realiza un get a google.com y muestra su contenido
