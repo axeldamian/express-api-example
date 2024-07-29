@@ -27,9 +27,13 @@ npm i nodemon
 Reinicia la aplicación sola si realizo cambios, para no hacerlo yo cada rato.
 capaz hay que ponerle ```--save-dev```
 
-Para correr nodemon
+Para correr la aplicación
 ```
 npm run start
+```
+es lo mismo que
+```
+node app.js
 ```
 
 Yarn es como npm un package manager, npm es node package manager (dicen que no, pero no tiene sentido otra explicación).
