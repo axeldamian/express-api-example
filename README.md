@@ -40,3 +40,12 @@ No conviene instalar Yarn con npm.
 ```
 node app.js    
 ```
+o
+```
+npm run start
+```
+
+Con nodemon
+```
+npm run dev
+```
