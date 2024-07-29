@@ -10,7 +10,7 @@ function hola(){
 }
 
 async function getContent( res ) {
-  const response = await axios.get('http://localhost:8080/ping',
+  const response = await axios.get('https://google.com',
                     {
                     headers: {
                         'Content-Type': 'application/json'
