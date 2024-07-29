@@ -1,4 +1,5 @@
 const lib = require("./axios");
+//const axios = require('axios');
 
 const express = require('express'); // Importa Express
 const app = express(); // Crea una aplicación Express
@@ -8,9 +9,11 @@ const PORT = 3000; // Define el puerto en el que correrá la aplicación
 app.use(express.json());
 
 // Define una ruta básica
-app.get('/', (req, res) => {
-    console.log(lib.getContent("asd"));
-    res.send('¡Hola, mundo!'); // Responde con un mensaje
+app.get('/api', (req, res) => {
+    //res.send(lib.hola());
+    const val = lib.getContent( res );
+    //res.send( val );
+    //res.send('¡Hola, mundo!'); // Responde con un mensaje
 });
 
 // Define otra ruta

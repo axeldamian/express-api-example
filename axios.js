@@ -1,17 +1,24 @@
 //import axios from 'axios';
 const axios = require('axios');
 
-const http = axios.create({
-  baseUrl: 'https://www.google.com'
-});
+function pingLocalhost() {
+    return axios.get('http://localhost:8080/ping');
+};
 
-function getContent(userId) {
-  console.log(userId);
-  return http.get('/search', {
-  params : {
-    q : "asd"
-  }
-  });
+function hola(){
+  return "mensaje";
 }
 
-module.exports = { getContent };
+async function getContent( res ) {
+  const response = await axios.get('http://localhost:8080/ping',
+                    {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                  }).then( function(result){
+                    console.log(result.data);
+                    res.send(result.data);
+                  } ).catch( error => console.log(error) );
+}
+
+module.exports = { pingLocalhost, hola, getContent };
