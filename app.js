@@ -16,6 +16,10 @@ app.get('/api', (req, res) => {
     //res.send('¡Hola, mundo!'); // Responde con un mensaje
 });
 
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
 // Define otra ruta
 app.get('/api/saludo', (req, res) => {
     res.json({ mensaje: '¡Bienvenido a mi aplicación Express!' }); // Responde con un objeto JSON
