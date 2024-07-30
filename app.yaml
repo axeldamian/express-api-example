@@ -1,0 +1,6 @@
+runtime: nodejs18 # o la versión que estés usando
+instance_class: F1 # puedes elegir la clase de instancia que prefieras
+
+handlers:
+- url: /.*
+  script: auto
