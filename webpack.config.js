@@ -13,9 +13,10 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 
 const config = {
-    entry: './src/index.js',
+    entry: './app.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: __dirname,
+        filename: 'exit.js',
     },
     devServer: {
         open: true,
@@ -55,10 +56,10 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
-        
+
+
         config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-        
+
     } else {
         config.mode = 'development';
     }
